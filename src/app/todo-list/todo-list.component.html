@@ -1,0 +1,15 @@
+<form (submit)="addTask()">
+  <input type="text"
+    [(ngModel)]="newTaskDescription"
+    placeholder="What to do?"
+    name="newTaskDescription">
+</form>
+<ul>
+  <li *ngFor="let task of tasks"
+    [class.complete]="task.complete"
+    (click)="toggleComplete(task)">
+    <input type="checkbox"
+      [(ngModel)]="task.complete">
+    {{task.name}}
+  </li>
+</ul>

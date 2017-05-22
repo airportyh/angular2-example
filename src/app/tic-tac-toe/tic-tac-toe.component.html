@@ -1,0 +1,12 @@
+<p class="status">{{message}}</p>
+<div class="board">
+  <button *ngFor="let square of board; let i = index"
+    (click)="markSquare(i)"
+    [disabled]="gameOver">
+    {{square}}
+  </button>
+</div>
+<button *ngIf="gameOver"
+  (click)="reset()">
+  Play again!
+</button>

@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/todo"
+        routerLinkActive="active">
+        Todo List
+      </a>
+    </li>
+    <li>
+      <a routerLink="/ttt"
+        routerLinkActive="active">
+        Tic Tac Toe
+      </a>
+    </li>
+    <li>
+      <a routerLink="/hello"
+        routerLinkActive="active">
+        Hello
+      </a>
+    </li>
+    <li>
+      <a routerLink="/weather"
+        routerLinkActive="active">
+        Weather
+      </a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

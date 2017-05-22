@@ -1,0 +1,9 @@
+<p>
+  hello {{name}}!
+</p>
+Your name?
+<input type="text" [(ngModel)]="name"/>
+<button *ngIf="name"
+  (click)="popUp()">
+  Greet!
+</button>

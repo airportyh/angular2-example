@@ -1,0 +1,11 @@
+.board button {
+  float: left;
+  width: 33.3333%;
+  height: 160px;
+  font-size: 6em;
+}
+
+.status {
+  font-size: 2em;
+  text-align: center;
+}
